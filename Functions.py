@@ -52,19 +52,29 @@ def write_pot(input):
 
 # Reading the voltage at the ADC channels
 def Read_ADC(self,Ch):
+    ADC_Value = ADC.ADS1263_GetAll()
     try:
-        ADC_Value = ADC.ADS1263_GetAll()
-        if(ADC_Value[Ch]>>31 ==1):
+        control = ADC_Value[1]
+    except:
+        Ui_MainWindow.printf(self, 'Error with reading ADC. The program will be terminated')
+        GPIO_OFF()
+        write_pot(0x00)
+        OpAmp_ES('OFF')
+        exit()
+
+    Voltage = 0.0
+    try:
+        if (ADC_Value[Ch] >> 31 == 1):
             Voltage = REF * 2 - ADC_Value[Ch] * REF / 0x80000000
         else:
             Voltage = ADC_Value[Ch] * REF / 0x7fffffff
-        return Voltage
     except:
-        Ui_MainWindow.printf(self,'Warning: ADC could not read the input voltage due to an error.')
-        Ui_MainWindow.printf(self,'Instead, a large negative value will be saved so that'
-              ' it can be easily identified as incorrect in the log file.')
+        Ui_MainWindow.printf(self, 'Error with reading ADC. The program will be terminated')
+        GPIO_OFF()
+        write_pot(0x00)
+        OpAmp_ES('OFF')
+        exit()
 
-        Voltage = -10.0
     return Voltage
 
 # 15 Vcc Op Amp ON/OFF with the red LED indication
