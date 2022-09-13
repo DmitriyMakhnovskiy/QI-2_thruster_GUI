@@ -50,7 +50,7 @@ def set_par(self,series,shunt,c,up,down,current,channel,thr,file_name):
     tau_down = (R_series + R_shunt) * C  # discharging characteristic time in seconds
     initial_discharge = factor_down * tau_down
     msg.append('')
-    Ui_MainWindow.printf(self,'Wait for the initial safety discharge of capacitor...'+str(int(initial_discharge))+' s')
+    Ui_MainWindow.printf(self,'Wait for the initial safety discharge of capacitor...' + str(initial_discharge) +' s')
     Ui_MainWindow.printf(self,'')
     time.sleep(initial_discharge)
     # Starting measurements
