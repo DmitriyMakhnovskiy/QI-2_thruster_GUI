@@ -1,5 +1,7 @@
 This high voltage source, capable of delivering up to 4 kV with a power output of 10 W, was developed at the University of Plymouth, UK, as part of a DARPA-funded project (HR001118C0125; https://www.highergov.com/contract/HR001118C0125/) investigating quantised inertia (QI). The system was integrated with a Raspberry Pi 4B, enabling automated measurements and remote control. A Python-based graphical user interface (main.py) was developed to facilitate user-friendly operation and precise control of the system.
 
+To align with the potential application of the project in space research, the dimensions of the device were specifically tailored to meet the requirements of CubeSat platforms: https://en.wikipedia.org/wiki/CubeSat. CubeSats are standardized miniature satellites, typically measuring 10 cm × 10 cm × 10 cm per unit (1U), and are widely used for cost-effective and versatile space missions. 
+
 Quantised Inertia (QI) is a theoretical framework that proposes inertia arises from quantum interactions with the universe’s horizon, offering a new perspective on fundamental physical concepts. This project focused on supporting experimental studies of QI, with this high voltage source serving as a key tool in ensuring reliable and consistent measurements.
 
 Developed within the University of Plymouth, this system highlights the integration of software and hardware to meet the specific demands of cutting-edge research, providing a foundation for further exploration in the field.
