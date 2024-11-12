@@ -5,3 +5,13 @@ Quantised Inertia (QI) is a theoretical framework that proposes inertia arises f
 Developed within the University of Plymouth, this system highlights the integration of software and hardware to meet the specific demands of cutting-edge research, providing a foundation for further exploration in the field.
 
 A key experimental publication on DARPA project HR001118C0125: Neunzig, O., Weikert, M. & Tajmar, M. Thrust measurements and evaluation of asymmetric infrared laser resonators for space propulsion. CEAS Space J 14, 45–62 (2022). https://doi.org/10.1007/s12567-021-00366-4
+
+Other links:
+
+Dr. Mike McCulloch: https://uk.linkedin.com/in/mike-mcculloch-20602681?original_referer=https%3A%2F%2Fgithub.com%2FQIthruster
+
+An Alternative Theory of Inertia will Get Tested in Space: https://www.universetoday.com/160516/the-first-all-electrical-thruster-the-ivo-quantum-drive-is-headed-to-space/
+
+Quantized Inertia, Dark Matter, The EMDrive And How To Do Science Wrong: https://www.forbes.com/sites/briankoberlein/2017/02/15/quantized-inertia-dark-matter-the-emdrive-and-how-to-do-science-wrong/?sh=7fa756675f7a
+
+Physics with an edge: https://physicsfromtheedge.blogspot.com/
